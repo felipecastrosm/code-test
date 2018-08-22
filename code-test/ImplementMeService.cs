@@ -6,7 +6,7 @@ using RingbaLibs.Models;
 namespace code_test
 {
     /// <summary>
-    /// TODO: Fill int he implementation of this service
+    /// TODO: Fill in the implementation of this service
     /// </summary>
     public class ImplementMeService : IDisposable
     {
@@ -32,7 +32,7 @@ namespace code_test
 
         public void DoWork()
         {
-            //sudo code, not production ready
+            // Pseudo-code to illustrate a naive implementation. Provide an optimal implementation.
 
             while (true)
             {

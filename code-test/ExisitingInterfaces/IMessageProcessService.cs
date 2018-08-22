@@ -8,7 +8,7 @@ namespace RingbaLibs
     public interface IMessageProcessService
     {
         /// <summary>
-        /// process the unit of work and returns if succesfull or not
+        /// Process the unit of work and returns if successfull or not
         /// </summary>
         /// <param name="uow"></param>
         /// <returns></returns>

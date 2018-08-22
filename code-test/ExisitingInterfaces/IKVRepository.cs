@@ -12,13 +12,13 @@ namespace RingbaLibs
         /// be filled in.
         /// 
         /// </summary>
-        /// <typeparam name="T">The type of object to retreive</typeparam>
+        /// <typeparam name="T">The type of object to retrieve</typeparam>
         /// <param name="key">the key of the item</param>
         /// <returns>the item or null if not found</returns>
         Task<Result<T>> GetAsync<T>(string key) where T : class;
 
         /// <summary>
-        /// creates an item in the repository
+        /// Creates an item in the repository
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="item"></param>
@@ -26,7 +26,7 @@ namespace RingbaLibs
         Task<ActionResult> CreateAsync<T>(CreateKVRequest<T> item) where T : class;
 
         /// <summary>
-        /// updates and item in the repository
+        /// Updates and item in the repository
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="key"></param>
@@ -35,11 +35,11 @@ namespace RingbaLibs
         Task<ActionResult> UpdateAsync<T>(string key,T item) where T: class;
 
         /// <summary>
-        /// only create the item if it DOES NOT exist, if is created true is returned else false
+        /// Only create the item if it DOES NOT exist, if is created true is returned else false
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="item"></param>
-        /// <returns>returns tru if the item is created else false</returns>
+        /// <returns>Returns true if the item is created else false</returns>
         Task<Result<bool>> CreateIfNotExistAsync<T>(CreateKVRequest<T> item) where T : class;
 
 
@@ -56,17 +56,17 @@ namespace RingbaLibs
     public class CreateKVRequest<T>
     {
         /// <summary>
-        /// the unique id of the item to be stored
+        /// The unique id of the item to be stored
         /// </summary>
         public string Key { get; set; }
 
         /// <summary>
-        /// the item to be stored
+        /// The item to be stored
         /// </summary>
         public T Item { get; set; }
 
         /// <summary>
-        /// the expiration in seconds or never expire if -1
+        /// The expiration in seconds or never expire if -1
         /// </summary>
         public int ExpireInSeconds { get; set; } = -1;
 
