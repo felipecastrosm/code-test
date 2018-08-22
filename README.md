@@ -42,7 +42,7 @@ This project **IS NOT** designed to run, instead it will be evaluated by executi
 
 ## How to Submit
 
-Create a public fork of this repository and reply back when you have completed the test with the url to the fork and a ref to your stack-overflow full name, email, and number you can be reached at. 
+Clone the repository and reply back with a zip archive of your completed test with your full name, email, and number you can be reached at. 
 
 Please include your favorite color, favorite book, salary, and any work requirements you may have. 
 
