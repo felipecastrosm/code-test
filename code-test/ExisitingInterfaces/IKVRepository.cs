@@ -26,6 +26,15 @@ namespace RingbaLibs
         Task<ActionResult> CreateAsync<T>(CreateKVRequest<T> item) where T : class;
 
         /// <summary>
+        /// updates and item in the repository
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="key"></param>
+        /// <param name="item"></param>
+        /// <returns></returns>
+        Task<ActionResult> UpdateAsync<T>(string key,T item) where T: class;
+
+        /// <summary>
         /// only create the item if it DOES NOT exist, if is created true is returned else false
         /// </summary>
         /// <typeparam name="T"></typeparam>
